@@ -1,0 +1,15 @@
+{
+  "name": "singleton-counter",
+  "version": "1.0.0",
+  "description": "simple example of a single counter in SA",
+  "main": "index.js",
+  "scripts": {
+    "test": "asp",
+    "build": "asb"
+  },
+  "author": "FTL",
+  "license": "MIT",
+  "devDependencies": {
+    "near-sdk-as": "^3.2.3"
+  }
+}
