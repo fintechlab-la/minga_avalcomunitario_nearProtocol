@@ -25,11 +25,6 @@ export class ProjectsForAval {
     this.status = Status.growing;
     this.avalCount = 0;
   }
-
-  /* 
-  greet(userId: string): string {
-    return "Hello, " + userId;} */
-  
 }
 
 
