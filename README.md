@@ -68,7 +68,7 @@ Las pruebas son parte del desarrollo, luego, para ejecutar las pruebas en el con
     yarn test
 
 
-esto ejecutará los métodos de prueba en el `assembly/__tests__/example.spec.js` archivo
+Esto ejecutará los métodos de prueba en el `assembly/__tests__/example.spec.js` archivo
 
 
 
