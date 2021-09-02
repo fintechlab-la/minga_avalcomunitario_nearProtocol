@@ -60,7 +60,7 @@ Command to get all the projects:
 near view <your deployed contract> getComplaints
 ```
 
-😎 Test 
+🤖 Test 
 ==================
 
 Las pruebas son parte del desarrollo, luego, para ejecutar las pruebas en el contrato inteligente comunitario, debe ejecutar el siguiente comando:
@@ -101,7 +101,7 @@ This is a explanation of the smart contract file system
 
 
 
-😊 Gracias por tomar interés en nuestro Proyecto
+👌 Gracias por tomar interés en nuestro Proyecto
 ==============================================
 
 Aquí dejamos una propuesta de diseño [UX/UI] para desarrollar la parte frontend del proyecto comunitario. 
