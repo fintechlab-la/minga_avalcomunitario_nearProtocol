@@ -75,7 +75,10 @@ this will execute the tests methods on the `assembly/__tests__/main.spect.js` fi
 ==================
 
 
-======================
+
+Gracias por interesarte en nuestro Proyecto
+============================================
+
 Aquí dejamos una propuesta de diseño [UX/UI] para desarrollar la parte frontend del proyecto comunitario. 
 
 
