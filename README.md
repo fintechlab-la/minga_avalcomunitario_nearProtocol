@@ -101,7 +101,7 @@ This is a explanation of the smart contract file system
 
 
 
-😊 Gracias por tomar interes en nuestro Proyecto
+😊 Gracias por tomar interés en nuestro Proyecto
 ==============================================
 
 Aquí dejamos una propuesta de diseño [UX/UI] para desarrollar la parte frontend del proyecto comunitario. 
