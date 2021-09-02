@@ -63,7 +63,7 @@ near view <your deployed contract> getComplaints
 😎 Test 
 ==================
 
-Testing is a part of the development, then to run the tests in the communite smart contract you need to run the follow command: 
+Las pruebas son parte del desarrollo, luego, para ejecutar las pruebas en el contrato inteligente comunitario, debe ejecutar el siguiente comando:
 
     yarn test
 
