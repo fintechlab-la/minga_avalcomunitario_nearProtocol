@@ -33,8 +33,12 @@ Step 2: Configure your NEAR CLI
 Configure your near-cli to authorize your test account recently created:
 
     near login
+    
+Step 3: Clonar Repositorio
+-------------------------------    
 
-Step 3: Build and make a smart contract development deploy  
+
+Step 4: Build and make a smart contract development deploy  
 --------------------------------
 
 Build the communite smart contract code and deploy the local development server: `yarn buildevploy` (see `package.json` for a full list of `scripts` you can run with `yarn`). This script return to you a provisional smart contract deployed (save it to use later)
