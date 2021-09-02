@@ -74,25 +74,7 @@ this will execute the tests methods on the `assembly/__tests__/main.spect.js` fi
 👩🏼‍🏫 Exploring and Explaining The Code 
 ====================================
 
-├── README.md                                       # this file
-├── as-pect.config.js                               # configuration for as-pect (AssemblyScript unit testing)
-├── asconfig.json                                   # configuration file for Assemblyscript compiler
-├── assembly
-│   ├── __tests__
-│   │   ├── as-pect.d.ts                            # as-pect unit testing headers for type hints
-│   │   └── main.spec.ts                            # unit test for the contract
-│   ├── as_types.d.ts                               # AssemblyScript headers for type hint
-│   ├── index.ts                                    # contains the smart contract code
-│   ├── models.ts                                   # contains code for the models accesible to the smart contract
-│   └── tsconfig.json                               # Typescript configuration file
-├── neardev
-│   ├── dev-account                                 #in this file the provisional deploy smart contract account is saved
-│   └── dev-account.env                             #in this file the provisional deploy smart contract account is saved like a environment variable                             
-├── out
-│   └── main.wasm                                   # compiled smart contract code using to deploy
-├── package-lock.json                               # project manifest lock version
-├── package.json                                    # Node.js project manifest (scripts and dependencies)
-└── yarn.lock                                       # project manifest lock version
+
 
 
 😊 Gracias por tomar interes en nuestro Proyecto
