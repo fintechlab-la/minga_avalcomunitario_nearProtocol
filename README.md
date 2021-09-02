@@ -1,14 +1,20 @@
 💻 Introducción a Aval Comunitario
 ==================
 
- Aval Comunitario es un smart contract escrito bajo el protocolo NEAR que permite_
-
-
+ Aval Comunitario es un smart contract escrito bajo el protocolo NEAR que permite:
+ 
+ 1. Crear un proyecto.
+ 2. Obtener una lista de los proyectos que se han creado.
+ 3. Avalar un proyecto.
+ 4. Cambiar el status de un proyecto.
+ 5. Eliminar un proyecto.
+ 
 
 👨‍💻 Instalación en local
 ===========
 
-To run this project locally you need to follow the next steps:
+Para correr este proyecto en local debes seguir los siguientes pasos:
+
 
 Paso 1: Prerequisites
 ------------------------------
