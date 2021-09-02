@@ -1,3 +1,5 @@
+
+<link href="path/to/css/icono-arg.css" rel="stylesheet">
 ![Poncho](img/poncho.gif)
 # Introducción a MINGA
 
