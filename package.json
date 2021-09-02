@@ -1,14 +1,14 @@
 {
-  "name": "singleton-counter",
+  "name": "aval-comunitario",
   "version": "1.0.0",
-  "description": "simple example of a single counter in SA",
+  "description": "implementación de un smart contract para aval comunitario",
   "main": "index.js",
   "scripts": {
     "test": "asp",
     "build": "asb",
     "deploy:dev": "yarn build && near dev-deploy"
   },
-  "author": "FTL",
+  "author": "Grupo-2-FTL",
   "license": "MIT",
   "devDependencies": {
     "near-sdk-as": "^3.2.3"

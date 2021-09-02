@@ -1,7 +1,7 @@
 import { Context } from "near-sdk-as";
 import { projects, ProjectsForAval, Status } from "./models";
 
-export function hello_world(): string {
+export function hello(): string {
     let user = Context.sender
     return "hello " + user;
 }
@@ -10,9 +10,8 @@ export function createProject(
   title: string,
   description: string,
 ): void {
-assert(title.length>0,"a tittle must be included")
-assert(description.length>0 && description.length<10)
-let key = Context.sender + "k"
+assert(title.length>0,"debes incluir un titulo")
+assert(description.length>0 && description.length<50, 'Incluye una descripcion corta')
 
 
 projects.push(
@@ -28,8 +27,25 @@ export function getProjects(): Array<ProjectsForAval> {
     return result;
   }
 
-  export function avalProject(id: i32): ProjectsForAval {
+  export function avalProject(
+    id: i32,
+    amount: i32,
+    ): ProjectsForAval {
+    assert(<i32>amount>0,"debes incluir al menos 1 near")
      let project  = projects[id]
-     project.avalCount+=1
+     project.avalCount+=amount
      projects.replace(<i32>id, project)
-    return project }
+    return project 
+  }
+
+  export function changeStatus(id: i32): ProjectsForAval {
+    let project  = projects[id]
+    project.status = Status.goal_reached
+    projects.replace(<i32>id, project)
+    return project
+  }
+
+  export function eliminateProject(id: i32): void {
+    assert(id>0,"No tenemos contratos con id negativos")
+    projects.swap_remove(<i32>id)
+  }
