@@ -77,3 +77,13 @@ this will execute the tests methods on the `assembly/__tests__/main.spect.js` fi
 
 ======================
 Here we leave a [UX/UI] design proposal to develop the frontend part of the project
+
+
+  [create-near-app]: https://github.com/near/create-near-app
+  [Node.js]: https://nodejs.org/en/download/package-manager/
+  [NEAR accounts]: https://docs.near.org/docs/concepts/account
+  [NEAR Wallet]: https://wallet.testnet.near.org/
+  [near-cli]: https://github.com/near/near-cli
+  [NEAR test account]: https://docs.near.org/docs/develop/basics/create-account#creating-a-testnet-account
+  [nvm]: https://github.com/nvm-sh/nvm
+  [UX/UI]: https://www.figma.com/proto/0dZLC0WI1eVsfjeKu3T8J8/Garant%C3%ADzame?node-id=2%3A8&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=2%3A8
