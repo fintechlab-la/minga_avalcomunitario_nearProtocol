@@ -46,19 +46,29 @@ Build the communite smart contract code and deploy the local development server:
 
 Congratulations, now you'll have a local development environment running on the NEAR TestNet! 🥳
 
-Command to create a project: 
---------------------------------------------
+
+Comando para CREAR un proyecto para ser avalado
+-----------------------------------------------
 
 ```bash
-near call <your deployed contract> addNewComplaint '{"title": "string","description":"string","category":integer,"location":"string"}' --account-id <your test account>
+near call <your deployed contract> createProject '{"title": "string","description":"string"}' 
 ```
 
 Command to get all the projects:
 --------------------------------------------
 
 ```bash
-near view <your deployed contract> getComplaints
+near view <your deployed contract> getPorojects
 ```
+
+Comando para ELIMINAR un proyecto
+--------------------------------------------
+
+near 
+avalproject
+changestatus
+
+
 
 🤖 Test 
 ==================
