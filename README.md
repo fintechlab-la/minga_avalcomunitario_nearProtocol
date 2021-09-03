@@ -71,13 +71,16 @@ near view <your deployed contract> eliminateProject
 Comando para AVALAR un proyecto
 --------------------------------------------
 
+```bash
 avalproject
-
+```
 
 Comando para REVISAR UN PROYECTO FINANCIADO un proyecto
 --------------------------------------------------------
 
-changestatus
+```bash
+near call <your deployed contract> changestatus
+``` 
 
 🤖 Test 
 ==================
