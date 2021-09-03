@@ -79,7 +79,7 @@ near call <your deployed contract> createProject '{"title": "string","descriptio
 Permite listar los proyectos que existen en nuestro contrato inteligente
 
 ```bash
-near view <your deployed contract> getProjects --account-id <username>.tesnet
+near view <your deployed contract> getProjects --account-id <username>.testnet
 ```
 
 ✏️ Comando para ELIMINAR un proyecto
@@ -88,7 +88,7 @@ near view <your deployed contract> getProjects --account-id <username>.tesnet
 Permite eliminar un proyecto que ya no pertenece a la red y se da de baja
 
 ```bash
-near view <your deployed contract> eliminateProject '{"id":1}' --account-id <username>.tesnet
+near view <your deployed contract> eliminateProject '{"id":1}' --account-id <username>.testnet
 ``` 
 
 ✏️ Comando para AVALAR un proyecto
@@ -97,7 +97,7 @@ near view <your deployed contract> eliminateProject '{"id":1}' --account-id <use
 Permite dar la confianza comunitaria (avalar) a un proyecto mediante la distribución de near
 
 ```bash
-near call <your deployed contract> avalproject '{"id": amount}' --account-id <username>.tesnet
+near call <your deployed contract> avalproject '{"id": amount}' --account-id <username>.testnet
 ```
 
 ✏️ Comando para CAMBIAR EL ESTADO de un proyecto
@@ -106,7 +106,7 @@ near call <your deployed contract> avalproject '{"id": amount}' --account-id <us
 Permite cambiar el estado de un proyecto de avalado y que finalmente accedio a un préstamo debido al aval comunitario.
 
 ```bash
-near call <your deployed contract> changestatus '{"id":1}' --account-id <username>.tesnet
+near call <your deployed contract> changestatus '{"id":1}' --account-id <username>.testnet
 ``` 
 
 🤖 Test 
@@ -121,7 +121,7 @@ Esto ejecutará los métodos de prueba en el `assembly/__tests__/example.spec.js
 
 
 ```bash
-near call <your deployed contract> hello --account-id <username>.tesnet
+near call <your deployed contract> hello --account-id <username>.testnet
 ```
 
 
