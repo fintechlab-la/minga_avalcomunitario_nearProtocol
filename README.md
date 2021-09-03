@@ -42,11 +42,6 @@ Este comando nos permite clonar el repositorio de nuestro proyecto MINGA
 ```bash
 git clone https://github.com/fintechlab-la/minga_avalcomunitario_nearProtocol.git
 ```
-Una vez que hayas descargado el repositorio, asegurate de ejecutar los comandos dentro del repositorio descargado. Puedes hacerlo con 
-
-```bash
-cd minga_avalcomunitario_nearProtocol/
-```
 
 Step 4: Realiza el BUILD para implementación de desarrollo de contrato inteligente 
 ------------------------------------------------------------------------------------
@@ -73,16 +68,19 @@ usarlo más tarde)
 -----------------------------------------------
 
 Permite crear un proyecto que ha sido revisado para entrar a la red de proyectos colaborativos para ser avalados de manera distribuida
-
+Para Linux:
 ```bash
 near call <your deployed contract> createProject '{"title":"string","description":"string"}' --account-id <username>.testnet
 ```
-
+Para windows:
+```bash
+near call <your deployed contract> createProject "{\"title\": \"string\",\"description\":\"string\"}" --account-id <username>.testnet
+```
 ✏️ Comando que LISTA todos los proyectos:
 --------------------------------------------
 
 Permite listar los proyectos que existen en nuestro contrato inteligente
-
+Para Linux y Windows:
 ```bash
 near view <your deployed contract> getProjects --account-id <username>.testnet
 ```
@@ -91,28 +89,39 @@ near view <your deployed contract> getProjects --account-id <username>.testnet
 --------------------------------------------
 
 Permite eliminar un proyecto que ya no pertenece a la red y se da de baja
-
+Para Linux:
 ```bash
 near view <your deployed contract> eliminateProject '{"id":1}' --account-id <username>.testnet
 ``` 
-
+Para Windows:
+```bash
+near view <your deployed contract> eliminateProject "{\"id\":<id de proyecto>}" --account-id <username>.testnet
+```
 ✏️ Comando para AVALAR un proyecto
 --------------------------------------------
 
 Permite dar la confianza comunitaria (avalar) a un proyecto mediante la distribución de near
-
+Para Linux:
 ```bash
-near call <your deployed contract> avalProject '{"id":0, "amount":1000}' --account-id <username>.testnet
+near call <your deployed contract> avalProject '{"id":<id de proyecto>, "amount":<cantidad de near en números>}' --account-id <username>.testnet
+```
+Para Windows:
+```bash
+near call <your deployed contract> avalProject "{\"id\":<id de proyecto>, \"amount\":<cantidad de near en números>}" --account-id <username>.testnet
 ```
 
 ✏️ Comando para CAMBIAR EL ESTADO de un proyecto
 ------------------------------------------------
 
 Permite cambiar el estado de un proyecto de avalado y que finalmente accedio a un préstamo debido al aval comunitario.
-
+Para Linux:
 ```bash
 near call <your deployed contract> changeStatus '{"id":1}' --account-id <username>.testnet
-``` 
+```
+Para windows: 
+```bash
+near call <your deployed contract> changeStatus "{\"id\":<id de proyecto>}" --account-id <username>.testnet
+```
 
 🤖 Test 
 ==================
