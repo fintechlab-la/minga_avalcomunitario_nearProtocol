@@ -19,20 +19,20 @@ Para correr este proyecto en local debes seguir los siguientes pasos:
 Paso 1: Pre - Requisitos
 ------------------------------
 
-1. Asegúrese de haber instalado [Node.js] ≥ 12 ((recomendamos usar [nvm]). Puedes revisar con: `node --version`
-2. Asegúrese de haber instalado yarn: `npm install -g yarn`. Puedes revisar con: `npm --version`
-3. Instalar dependencias: `yarn install`. Puedes revisar si ya lo tienes con: `yarn --version`
-4. Crear un test near account [NEAR test account]. Para saber como hacerlo, puedes [ingresar haciendo click aquí].
-5. Instalar el NEAR CLI globally: [near-cli] es una interfaz de linea de comando (CLI) para interacturar con NEAR blockchain: `yarn install --global near-cli`
+1. Asegúrese de haber instalado [Node.js] ≥ 12 ((recomendamos usar [nvm])
+2. Asegúrese de haber instalado yarn: `npm install -g yarn`
+3. Instalar dependencias: `yarn install`
+4. Crear un test near account [NEAR test account]
+5. Instalar el NEAR CLI globally: [near-cli] es una interfaz de linea de comando (CLI) para interacturar con NEAR blockchain
+
+    yarn install --global near-cli
 
 Step 2: Configura tu NEAR CLI
 -------------------------------
 
 Configura tu near-cli para autorizar su cuenta de prueba creada recientemente:
-```bash
-near login
-```
-En la página web emergente, debes autorizar ingresando y confirmando con la cuenta que te haz creado previamente. Por ejemplo: 'aval1.testnet'. Luego, cerrar la ventana y continuar con el terminal.
+
+    near login
     
 Step 3: Clonar Repositorio
 -------------------------------    
@@ -41,11 +41,6 @@ Este comando nos permite clonar el repositorio de nuestro proyecto MINGA
 
 ```bash
 git clone https://github.com/fintechlab-la/minga_avalcomunitario_nearProtocol.git
-```
-Una vez que hayas descargado el repositorio, asegurate de ejecutar los comandos dentro del repositorio descargado. Puedes hacerlo con 
-
-```bash
-cd minga_avalcomunitario_nearProtocol/
 ```
 
 Step 4: Realiza el BUILD para implementación de desarrollo de contrato inteligente 
@@ -72,17 +67,22 @@ usarlo más tarde)
 ✏️ Comando para CREAR un proyecto para ser avalado
 -----------------------------------------------
 
-Permite crear un proyecto que ha sido revisado para entrar a la red de proyectos colaborativos para ser avalados de manera distribuida. Antes de ejecutar el comando brindado, modifica <your deployed contract> por el número de contrato generado. Por ejemplo: 'dev-1630622185346-59088620194720'. Además, modifica <username> por tu nombre de usuario en testnet. Por ejemplo: 'aval1'
+Permite crear un proyecto que ha sido revisado para entrar a la red de proyectos colaborativos para ser avalados de manera distribuida.
 
+Para Linux:
 ```bash
 near call <your deployed contract> createProject '{"title":"string","description":"string"}' --account-id <username>.testnet
 ```
-
+Para windows:
+```bash
+near call <your deployed contract> createProject "{\"title\": \"string\",\"description\":\"string\"}" --account-id <username>.testnet
+```
 ✏️ Comando que LISTA todos los proyectos:
 --------------------------------------------
 
-Permite listar los proyectos que existen en nuestro contrato inteligente. Antes de ejecutar el comando brindado, modifica <your deployed contract> por el número de contrato generado. Por ejemplo: 'dev-1630622185346-59088620194720'. Además, modifica <username> por tu nombre de usuario en testnet. Por ejemplo: 'aval1'
+Permite listar los proyectos que existen en nuestro contrato inteligente.
 
+Para Linux y Windows:
 ```bash
 near view <your deployed contract> getProjects --account-id <username>.testnet
 ```
@@ -90,19 +90,28 @@ near view <your deployed contract> getProjects --account-id <username>.testnet
 ✏️ Comando para ELIMINAR un proyecto
 --------------------------------------------
 
-Permite eliminar un proyecto que ya no pertenece a la red y se da de baja
+Permite eliminar un proyecto que ya no pertenece a la red y se da de baja.
 
+Para Linux:
 ```bash
 near view <your deployed contract> eliminateProject '{"id":1}' --account-id <username>.testnet
 ``` 
-
+Para Windows:
+```bash
+near view <your deployed contract> eliminateProject "{\"id\":<id de proyecto>}" --account-id <username>.testnet
+```
 ✏️ Comando para AVALAR un proyecto
 --------------------------------------------
 
-Permite dar la confianza comunitaria (avalar) a un proyecto mediante la distribución de near
+Permite dar la confianza comunitaria (avalar) a un proyecto mediante la distribución de near.
 
+Para Linux:
 ```bash
-near call <your deployed contract> avalProject '{"id":0, "amount":1000}' --account-id <username>.testnet
+near call <your deployed contract> avalProject '{"id":<id de proyecto>, "amount":<cantidad de near en números>}' --account-id <username>.testnet
+```
+Para Windows:
+```bash
+near call <your deployed contract> avalProject "{\"id\":<id de proyecto>, \"amount\":<cantidad de near en números>}" --account-id <username>.testnet
 ```
 
 ✏️ Comando para CAMBIAR EL ESTADO de un proyecto
@@ -110,9 +119,14 @@ near call <your deployed contract> avalProject '{"id":0, "amount":1000}' --accou
 
 Permite cambiar el estado de un proyecto de avalado y que finalmente accedio a un préstamo debido al aval comunitario.
 
+Para Linux:
 ```bash
 near call <your deployed contract> changeStatus '{"id":1}' --account-id <username>.testnet
-``` 
+```
+Para windows: 
+```bash
+near call <your deployed contract> changeStatus "{\"id\":<id de proyecto>}" --account-id <username>.testnet
+```
 
 🤖 Test 
 ==================
@@ -139,18 +153,18 @@ This is a explanation of the smart contract file system
 ├── as-pect.config.js                               # configuration for as-pect (AssemblyScript unit testing)
 ├── asconfig.json                                   # configuration file for Assemblyscript compiler
 ├── assembly
-│   ├── __tests__
-│   │   ├── as-pect.d.ts                            # as-pect unit testing headers for type hints
-│   │   └── main.spec.ts                            # unit test for the contract
-│   ├── as_types.d.ts                               # AssemblyScript headers for type hint
-│   ├── index.ts                                    # contains the smart contract code
-│   ├── models.ts                                   # contains code for the models accesible to the smart contract
-│   └── tsconfig.json                               # Typescript configuration file
+│   ├── __tests__
+│   │   ├── as-pect.d.ts                            # as-pect unit testing headers for type hints
+│   │   └── main.spec.ts                            # unit test for the contract
+│   ├── as_types.d.ts                               # AssemblyScript headers for type hint
+│   ├── index.ts                                    # contains the smart contract code
+│   ├── models.ts                                   # contains code for the models accesible to the smart contract
+│   └── tsconfig.json                               # Typescript configuration file
 ├── neardev
-│   ├── dev-account                                 #in this file the provisional deploy smart contract account is saved
-│   └── dev-account.env                             #in this file the provisional deploy smart contract account is saved like a environment variable                             
+│   ├── dev-account                                 #in this file the provisional deploy smart contract account is saved
+│   └── dev-account.env                             #in this file the provisional deploy smart contract account is saved like a environment variable                             
 ├── out
-│   └── main.wasm                                   # compiled smart contract code using to deploy
+│   └── main.wasm                                   # compiled smart contract code using to deploy
 ├── package-lock.json                               # project manifest lock version
 ├── package.json                                    # Node.js project manifest (scripts and dependencies)
 └── yarn.lock                                       # project manifest lock version
@@ -169,7 +183,6 @@ Aquí dejamos una propuesta de diseño [UX/UI] para desarrollar la parte fronten
   [create-near-app]: https://github.com/near/create-near-app
   [Node.js]: https://nodejs.org/en/download/package-manager/
   [NEAR accounts]: https://docs.near.org/docs/concepts/account
-  [ingresar haciendo click aquí]: https://www.youtube.com/watch?v=2N20YqWkDgM&t=173s
   [NEAR Wallet]: https://wallet.testnet.near.org/
   [near-cli]: https://github.com/near/near-cli
   [NEAR test account]: https://docs.near.org/docs/develop/basics/create-account#creating-a-testnet-account
