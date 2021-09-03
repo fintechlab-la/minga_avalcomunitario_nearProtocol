@@ -54,7 +54,7 @@ npm install
 
 Cree el código de contrato inteligente MINGA AVAL COMUNITARIO e implemente el servidor de desarrollo local: 
 ```bash
-yarn buildevploy
+yarn deploy:dev
 ```
 Consulte` package.json` para obtener una lista completa de `scripts` que puede ejecutar con` yarn`). Este script le devuelve un contrato inteligente provisional
 implementado (guárdelo para
