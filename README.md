@@ -60,7 +60,7 @@ usarlo más tarde)
 Permite crear un proyecto que ha sido revisado para entrar a la red de proyectos colaborativos para ser avalados de manera distribuida
 
 ```bash
-near call <your deployed contract> createProject '{"title": "string","description":"string"}' --account-id cryptoass.tesnet
+near call <your deployed contract> createProject '{"title": "string","description":"string"}' --account-id <username>.tesnet
 ```
 
 ✏️ Comando que LISTA todos los proyectos:
@@ -69,7 +69,7 @@ near call <your deployed contract> createProject '{"title": "string","descriptio
 Permite listar los proyectos que existen en nuestro contrato inteligente
 
 ```bash
-near view <your deployed contract> getProjects --account-id cryptoass.tesnet
+near view <your deployed contract> getProjects --account-id <username>.tesnet
 ```
 
 ✏️ Comando para ELIMINAR un proyecto
@@ -78,7 +78,7 @@ near view <your deployed contract> getProjects --account-id cryptoass.tesnet
 Permite eliminar un proyecto que ya no pertenece a la red y se da de baja
 
 ```bash
-near view <your deployed contract> eliminateProject '{"id":1}' --account-id cryptoass.tesnet
+near view <your deployed contract> eliminateProject '{"id":1}' --account-id <username>.tesnet
 ``` 
 
 ✏️ Comando para AVALAR un proyecto
@@ -87,7 +87,7 @@ near view <your deployed contract> eliminateProject '{"id":1}' --account-id cryp
 Permite dar la confianza comunitaria (avalar) a un proyecto mediante la distribución de near
 
 ```bash
-near call <your deployed contract> avalproject '{"id": amount}' --account-id cryptoass.tesnet
+near call <your deployed contract> avalproject '{"id": amount}' --account-id <username>.tesnet
 ```
 
 ✏️ Comando para CAMBIAR EL ESTADO de un proyecto
@@ -96,7 +96,7 @@ near call <your deployed contract> avalproject '{"id": amount}' --account-id cry
 Permite cambiar el estado de un proyecto de avalado y que finalmente accedio a un préstamo debido al aval comunitario.
 
 ```bash
-near call <your deployed contract> changestatus '{"id":1}' --account-id cryptoass.tesnet
+near call <your deployed contract> changestatus '{"id":1}' --account-id <username>.tesnet
 ``` 
 
 🤖 Test 
