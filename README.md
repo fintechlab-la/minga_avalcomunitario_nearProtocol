@@ -84,6 +84,10 @@ Las pruebas son parte del desarrollo, luego, para ejecutar las pruebas en el con
 Esto ejecutará los métodos de prueba en el `assembly/__tests__/example.spec.js` archivo
 
 
+```bash
+near call <your deployed contract> hello  
+```
+
 
 👩🏼‍🏫 Exploring and Explaining The Code 
 ====================================
