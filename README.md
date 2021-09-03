@@ -46,6 +46,12 @@ git clone https://github.com/fintechlab-la/minga_avalcomunitario_nearProtocol.gi
 Step 4: Realiza el BUILD para implementación de desarrollo de contrato inteligente 
 ------------------------------------------------------------------------------------
 
+Instale
+
+```bash
+npm install
+```
+
 Cree el código de contrato inteligente MINGA AVAL COMUNITARIO e implemente el servidor de desarrollo local: `yarn buildevploy` (consulte` package.json` para
 obtener una lista completa de `scripts` que puede ejecutar con` yarn`). Este script le devuelve un contrato inteligente provisional implementado (guárdelo para
 usarlo más tarde)
