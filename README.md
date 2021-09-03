@@ -29,8 +29,10 @@ Step 2: Configura tu NEAR CLI
 -------------------------------
 
 Configura tu near-cli para autorizar su cuenta de prueba creada recientemente:
-
-    near login
+```bash
+near login
+```
+Aquí debes autorizar el ingreso con la cuenta que te haz creado previamente. Por ejemplo: 'aval1.testnet'
     
 Step 3: Clonar Repositorio
 -------------------------------    
