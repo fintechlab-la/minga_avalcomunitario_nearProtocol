@@ -79,7 +79,7 @@ Comando para CAMBIAR EL ESTAD de un proyecto
 ------------------------------------------------
 
 ```bash
-near call <your deployed contract> changestatus '{"id": "string"}'
+near call <your deployed contract> changestatus(id)
 ``` 
 
 🤖 Test 
