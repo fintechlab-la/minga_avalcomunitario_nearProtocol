@@ -78,7 +78,7 @@ near view <your deployed contract> getProjects
 Permite eliminar un proyecto que ya no pertenece a la red y se da de baja
 
 ```bash
-near view <your deployed contract> eliminateProject 
+near view <your deployed contract> eliminateProject '{"id":1}'
 ``` 
 
 ✏️ Comando para AVALAR un proyecto
@@ -87,7 +87,7 @@ near view <your deployed contract> eliminateProject
 Permite dar la confianza comunitaria (avalar) a un proyecto mediante la distribución de near
 
 ```bash
-avalproject
+near call <your deployed contract> avalproject '{"id": amount}'
 ```
 
 ✏️ Comando para CAMBIAR EL ESTADO de un proyecto
