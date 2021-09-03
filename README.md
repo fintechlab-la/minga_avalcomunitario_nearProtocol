@@ -19,9 +19,9 @@ Para correr este proyecto en local debes seguir los siguientes pasos:
 Paso 1: Prerequisites
 ------------------------------
 
-1. Make sure you've installed [Node.js] ≥ 12 (we recommend use [nvm])
-2. Make sure you've installed yarn: `npm install -g yarn`
-3. Install dependencies: `yarn install`
+1. Asegúrese de haber instalado [Node.js] ≥ 12 ((recomendamos usar[nvm])
+2. Asegúrese de haber instalado yarn: `npm install -g yarn`
+3. Instalar dependencias: `yarn install`
 4. Create a test near account [NEAR test account]
 5. Install the NEAR CLI globally: [near-cli] is a command line interface (CLI) for interacting with the NEAR blockchain
 
