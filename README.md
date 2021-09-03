@@ -79,7 +79,7 @@ Comando para REVISAR UN PROYECTO FINANCIADO un proyecto
 --------------------------------------------------------
 
 ```bash
-near call <your deployed contract> changestatus
+near call <your deployed contract> changestatus '{"id": "string"}'
 ``` 
 
 🤖 Test 
