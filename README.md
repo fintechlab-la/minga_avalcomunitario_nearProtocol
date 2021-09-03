@@ -42,7 +42,11 @@ Este comando nos permite clonar el repositorio de nuestro proyecto MINGA
 ```bash
 git clone https://github.com/fintechlab-la/minga_avalcomunitario_nearProtocol.git
 ```
-Una vez que hayas descargado el repositorio, asegurate de ejecutar los comandos dentro del repositorio descargado. Puedes hacerlo con cd ./minga_avalcomunitario_nearProtocol.git
+Una vez que hayas descargado el repositorio, asegurate de ejecutar los comandos dentro del repositorio descargado. Puedes hacerlo con 
+
+```bash
+cd ./minga_avalcomunitario_nearProtocol.git
+```
 
 Step 4: Realiza el BUILD para implementación de desarrollo de contrato inteligente 
 ------------------------------------------------------------------------------------
