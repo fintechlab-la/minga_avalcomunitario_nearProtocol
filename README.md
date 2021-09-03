@@ -58,12 +58,15 @@ Comando que LISTA todos los proyectos:
 --------------------------------------------
 
 ```bash
-near view <your deployed contract> getPorojects
+near view <your deployed contract> getProjects
 ```
 
 Comando para ELIMINAR un proyecto
 --------------------------------------------
 
+```bash
+near view <your deployed contract> eliminateProject
+``` 
 near 
 avalproject
 changestatus
