@@ -54,7 +54,7 @@ Comando para CREAR un proyecto para ser avalado
 near call <your deployed contract> createProject '{"title": "string","description":"string"}' 
 ```
 
-Command to get all the projects:
+Comando que LISTA todos los proyectos:
 --------------------------------------------
 
 ```bash
