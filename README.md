@@ -54,7 +54,7 @@ usarlo más tarde)
 ¡Felicitaciones, ahora tendrá un entorno de desarrollo local ejecutándose en NEAR TestNet!
 
 
-Comando para CREAR un proyecto para ser avalado
+✏️ Comando para CREAR un proyecto para ser avalado
 -----------------------------------------------
 
 Permite crear un proyecto que ha sido revisado para entrar a la red de proyectos colaborativos para ser avalados de manera distribuida
@@ -63,7 +63,7 @@ Permite crear un proyecto que ha sido revisado para entrar a la red de proyectos
 near call <your deployed contract> createProject '{"title": "string","description":"string"}' 
 ```
 
-Comando que LISTA todos los proyectos:
+✏️ Comando que LISTA todos los proyectos:
 --------------------------------------------
 
 Permite listar los proyectos que existen en nuestro contrato inteligente
@@ -72,22 +72,28 @@ Permite listar los proyectos que existen en nuestro contrato inteligente
 near view <your deployed contract> getProjects
 ```
 
-Comando para ELIMINAR un proyecto
+✏️ Comando para ELIMINAR un proyecto
 --------------------------------------------
+
+Permite eliminar un proyecto que ya no pertenece a la red y se da de baja
 
 ```bash
 near view <your deployed contract> eliminateProject 
 ``` 
 
-Comando para AVALAR un proyecto
+✏️ Comando para AVALAR un proyecto
 --------------------------------------------
+
+Permite dar la confianza comunitaria (avalar) a un proyecto mediante la distribución de near
 
 ```bash
 avalproject
 ```
 
-Comando para CAMBIAR EL ESTAD de un proyecto
+✏️ Comando para CAMBIAR EL ESTADO de un proyecto
 ------------------------------------------------
+
+Permite cambiar el estado de un proyecto de avaldo y que finalmente accedio a un préstamo debido al aval comunitario.
 
 ```bash
 near call <your deployed contract> changestatus '{"id":1}'
