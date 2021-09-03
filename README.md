@@ -19,7 +19,7 @@ Para correr este proyecto en local debes seguir los siguientes pasos:
 Paso 1: Pre - Requisitos
 ------------------------------
 
-1. Asegúrese de haber instalado [Node.js] ≥ 12 ((recomendamos usar[nvm])
+1. Asegúrese de haber instalado [Node.js] ≥ 12 ((recomendamos usar [nvm])
 2. Asegúrese de haber instalado yarn: `npm install -g yarn`
 3. Instalar dependencias: `yarn install`
 4. Crear un test near account [NEAR test account]
@@ -60,7 +60,7 @@ usarlo más tarde)
 Permite crear un proyecto que ha sido revisado para entrar a la red de proyectos colaborativos para ser avalados de manera distribuida
 
 ```bash
-near call <your deployed contract> createProject '{"title": "string","description":"string"}' 
+near call <your deployed contract> createProject '{"title": "string","description":"string"}' --account-id cryptoass.tesnet
 ```
 
 ✏️ Comando que LISTA todos los proyectos:
@@ -69,7 +69,7 @@ near call <your deployed contract> createProject '{"title": "string","descriptio
 Permite listar los proyectos que existen en nuestro contrato inteligente
 
 ```bash
-near view <your deployed contract> getProjects
+near view <your deployed contract> getProjects --account-id cryptoass.tesnet
 ```
 
 ✏️ Comando para ELIMINAR un proyecto
@@ -78,7 +78,7 @@ near view <your deployed contract> getProjects
 Permite eliminar un proyecto que ya no pertenece a la red y se da de baja
 
 ```bash
-near view <your deployed contract> eliminateProject '{"id":1}'
+near view <your deployed contract> eliminateProject '{"id":1}' --account-id cryptoass.tesnet
 ``` 
 
 ✏️ Comando para AVALAR un proyecto
@@ -87,7 +87,7 @@ near view <your deployed contract> eliminateProject '{"id":1}'
 Permite dar la confianza comunitaria (avalar) a un proyecto mediante la distribución de near
 
 ```bash
-near call <your deployed contract> avalproject '{"id": amount}'
+near call <your deployed contract> avalproject '{"id": amount}' --account-id cryptoass.tesnet
 ```
 
 ✏️ Comando para CAMBIAR EL ESTADO de un proyecto
@@ -96,7 +96,7 @@ near call <your deployed contract> avalproject '{"id": amount}'
 Permite cambiar el estado de un proyecto de avalado y que finalmente accedio a un préstamo debido al aval comunitario.
 
 ```bash
-near call <your deployed contract> changestatus '{"id":1}'
+near call <your deployed contract> changestatus '{"id":1}' --account-id cryptoass.tesnet
 ``` 
 
 🤖 Test 
@@ -111,7 +111,7 @@ Esto ejecutará los métodos de prueba en el `assembly/__tests__/example.spec.js
 
 
 ```bash
-near call <your deployed contract> hello  
+near call <your deployed contract>  hello  
 ```
 
 
