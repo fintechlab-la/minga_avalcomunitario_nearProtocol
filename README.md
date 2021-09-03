@@ -43,6 +43,7 @@ Este comando nos permite clonar el repositorio de nuestro proyecto MINGA
 git clone https://github.com/fintechlab-la/minga_avalcomunitario_nearProtocol.git
 ```
 
+
 Step 4: Realiza el BUILD para implementación de desarrollo de contrato inteligente 
 ------------------------------------------------------------------------------------
 
@@ -80,7 +81,7 @@ near call <your deployed contract> createProject "{\"title\": \"string\",\"descr
 ✏️ Comando que LISTA todos los proyectos:
 --------------------------------------------
 
-Permite listar los proyectos que existen en nuestro contrato inteligente.
+Permite listar los proyectos que existen en nuestro contrato inteligente. Antes de ejecutar el comando brindado, modifica <your deployed contract> por el número de contrato generado. Por ejemplo: 'dev-1630622185346-59088620194720'. Además, modifica <username> por tu nombre de usuario en testnet. Por ejemplo: 'aval1'
 
 Para Linux y Windows:
 ```bash
