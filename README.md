@@ -75,8 +75,8 @@ Comando para AVALAR un proyecto
 avalproject
 ```
 
-Comando para REVISAR UN PROYECTO FINANCIADO 
----------------------------------------------
+Comando para CAMBIAR EL ESTAD de un proyecto
+------------------------------------------------
 
 ```bash
 near call <your deployed contract> changestatus '{"id": "string"}'
