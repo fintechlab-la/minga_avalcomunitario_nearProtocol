@@ -72,7 +72,7 @@ usarlo más tarde)
 ✏️ Comando para CREAR un proyecto para ser avalado
 -----------------------------------------------
 
-Permite crear un proyecto que ha sido revisado para entrar a la red de proyectos colaborativos para ser avalados de manera distribuida
+Permite crear un proyecto que ha sido revisado para entrar a la red de proyectos colaborativos para ser avalados de manera distribuida. Antes de ejecutar el comando brindado, modifica <your deployed contract> por el número de contrato generado. Por ejemplo: 'dev-1630622185346-59088620194720'. Además, modifica <username> por tu nombre de usuario en testnet. Por ejemplo: 'aval1'
 
 ```bash
 near call <your deployed contract> createProject '{"title":"string","description":"string"}' --account-id <username>.testnet
