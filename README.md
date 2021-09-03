@@ -45,7 +45,7 @@ git clone https://github.com/fintechlab-la/minga_avalcomunitario_nearProtocol.gi
 Una vez que hayas descargado el repositorio, asegurate de ejecutar los comandos dentro del repositorio descargado. Puedes hacerlo con 
 
 ```bash
-cd minga_avalcomunitario_nearProtocol.git/
+cd minga_avalcomunitario_nearProtocol/
 ```
 
 Step 4: Realiza el BUILD para implementación de desarrollo de contrato inteligente 
