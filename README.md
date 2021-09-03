@@ -23,9 +23,7 @@ Paso 1: Pre - Requisitos
 2. Asegúrese de haber instalado yarn: `npm install -g yarn`. Puedes revisar con: `npm --version`
 3. Instalar dependencias: `yarn install`. Puedes revisar si ya lo tienes con: `yarn --version`
 4. Crear un test near account [NEAR test account]. Para saber como hacerlo, puedes [ingresar haciendo click aquí].
-5. Instalar el NEAR CLI globally: [near-cli] es una interfaz de linea de comando (CLI) para interacturar con NEAR blockchain
-
-    `yarn install --global near-cli`
+5. Instalar el NEAR CLI globally: [near-cli] es una interfaz de linea de comando (CLI) para interacturar con NEAR blockchain: `yarn install --global near-cli`
 
 Step 2: Configura tu NEAR CLI
 -------------------------------
