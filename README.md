@@ -70,7 +70,7 @@ usarlo más tarde)
 Permite crear un proyecto que ha sido revisado para entrar a la red de proyectos colaborativos para ser avalados de manera distribuida
 
 ```bash
-near call <your deployed contract> createProject '{"title":"string","description":"string"}' --account-id <username>.tesnet
+near call <your deployed contract> createProject '{"title":"string","description":"string"}' --account-id <username>.testnet
 ```
 
 ✏️ Comando que LISTA todos los proyectos:
@@ -97,7 +97,7 @@ near view <your deployed contract> eliminateProject '{"id":1}' --account-id <use
 Permite dar la confianza comunitaria (avalar) a un proyecto mediante la distribución de near
 
 ```bash
-near call <your deployed contract> avalproject '{"id": amount}' --account-id <username>.testnet
+near call <your deployed contract> avalProject '{"id":0, "amount":1000}' --account-id <username>.testnet
 ```
 
 ✏️ Comando para CAMBIAR EL ESTADO de un proyecto
@@ -106,7 +106,7 @@ near call <your deployed contract> avalproject '{"id": amount}' --account-id <us
 Permite cambiar el estado de un proyecto de avalado y que finalmente accedio a un préstamo debido al aval comunitario.
 
 ```bash
-near call <your deployed contract> changestatus '{"id":1}' --account-id <username>.testnet
+near call <your deployed contract> changeStatus '{"id":1}' --account-id <username>.testnet
 ``` 
 
 🤖 Test 
