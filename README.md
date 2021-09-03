@@ -37,6 +37,11 @@ Configura tu near-cli para autorizar su cuenta de prueba creada recientemente:
 Step 3: Clonar Repositorio
 -------------------------------    
 
+Este comando nos permite clonar el repositorio de nuestro proyecto MINGA
+
+```bash
+   git clone https://github.com/fintechlab-la/minga_avalcomunitario_nearProtocol.git
+```
 
 Step 4: Construye y realiza una implementación de desarrollo de contrato inteligente 
 ------------------------------------------------------------------------------------
