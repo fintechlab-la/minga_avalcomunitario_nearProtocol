@@ -65,7 +65,7 @@ Comando para ELIMINAR un proyecto
 --------------------------------------------
 
 ```bash
-near view <your deployed contract> eliminateProject
+near view <your deployed contract> eliminateProject 
 ``` 
 
 Comando para AVALAR un proyecto
@@ -79,7 +79,7 @@ Comando para CAMBIAR EL ESTAD de un proyecto
 ------------------------------------------------
 
 ```bash
-near call <your deployed contract> changestatus(id)
+near call <your deployed contract> changestatus '{"id":1}'
 ``` 
 
 🤖 Test 
