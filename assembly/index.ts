@@ -46,6 +46,6 @@ export function getProjects(): Array<ProjectsForAval> {
   }
 
   export function eliminateProject(id: i32): void {
-    assert(id>0,"No tenemos contratos con id negativos")
+    assert(id>=0,"No tenemos contratos con id negativos")
     projects.swap_remove(<i32>id)
   }
