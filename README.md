@@ -16,21 +16,21 @@
 Para correr este proyecto en local debes seguir los siguientes pasos:
 
 
-Paso 1: Prerequisites
+Paso 1: Pre - Requisitos
 ------------------------------
 
 1. Asegúrese de haber instalado [Node.js] ≥ 12 ((recomendamos usar[nvm])
 2. Asegúrese de haber instalado yarn: `npm install -g yarn`
 3. Instalar dependencias: `yarn install`
-4. Create a test near account [NEAR test account]
-5. Install the NEAR CLI globally: [near-cli] is a command line interface (CLI) for interacting with the NEAR blockchain
+4. Crear un test near account [NEAR test account]
+5. Instalar el NEAR CLI globally: [near-cli] es una interfaz de linea de comando (CLI) para interacturar con NEAR blockchain
 
     yarn install --global near-cli
 
-Step 2: Configure your NEAR CLI
+Step 2: Configura tu NEAR CLI
 -------------------------------
 
-Configure your near-cli to authorize your test account recently created:
+Configura tu near-cli to authorize your test account recently created:
 
     near login
     
@@ -75,8 +75,8 @@ Comando para AVALAR un proyecto
 avalproject
 ```
 
-Comando para REVISAR UN PROYECTO FINANCIADO un proyecto
---------------------------------------------------------
+Comando para REVISAR UN PROYECTO FINANCIADO 
+---------------------------------------------
 
 ```bash
 near call <your deployed contract> changestatus '{"id": "string"}'
