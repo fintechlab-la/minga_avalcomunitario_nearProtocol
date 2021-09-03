@@ -67,11 +67,17 @@ Comando para ELIMINAR un proyecto
 ```bash
 near view <your deployed contract> eliminateProject
 ``` 
-near 
+
+Comando para AVALAR un proyecto
+--------------------------------------------
+
 avalproject
+
+
+Comando para REVISAR UN PROYECTO FINANCIADO un proyecto
+--------------------------------------------------------
+
 changestatus
-
-
 
 🤖 Test 
 ==================
