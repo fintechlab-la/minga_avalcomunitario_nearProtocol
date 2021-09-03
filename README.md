@@ -94,7 +94,7 @@ Permite eliminar un proyecto que ya no pertenece a la red y se da de baja.
 
 Para Linux:
 ```bash
-near view <your deployed contract> eliminateProject '{"id":1}' --account-id <username>.testnet
+near call <your deployed contract> eliminateProject '{"id":1}' --account-id <username>.testnet
 ``` 
 Para Windows:
 ```bash
