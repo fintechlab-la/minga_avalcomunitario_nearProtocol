@@ -140,8 +140,8 @@ This is a explanation of the smart contract file system
 ├── package.json                                    # Node.js project manifest (scripts and dependencies)
 └── yarn.lock                                       # project manifest lock version
 ```
-1. The smart contract code lives in the `/assambly` folder.
-2. To make a test deploy use the scripts in the `/package.json` file.
+1. El código de contrato inteligente vive en la carpeta `/assambly` folder.
+2. Para realizar una implementación de prueba, use los scripts en el `/package.json` file.
 
 
 
