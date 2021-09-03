@@ -40,7 +40,7 @@ Step 3: Clonar Repositorio
 Este comando nos permite clonar el repositorio de nuestro proyecto MINGA
 
 ```bash
-   git clone https://github.com/fintechlab-la/minga_avalcomunitario_nearProtocol.git
+git clone https://github.com/fintechlab-la/minga_avalcomunitario_nearProtocol.git
 ```
 
 Step 4: Construye y realiza una implementación de desarrollo de contrato inteligente 
@@ -57,12 +57,16 @@ usarlo más tarde)
 Comando para CREAR un proyecto para ser avalado
 -----------------------------------------------
 
+Permite crear un proyecto que ha sido revisado para entrar a la red de proyectos colaborativos para ser avalados de manera distribuida
+
 ```bash
 near call <your deployed contract> createProject '{"title": "string","description":"string"}' 
 ```
 
 Comando que LISTA todos los proyectos:
 --------------------------------------------
+
+Permite listar los proyectos que existen en nuestro contrato inteligente
 
 ```bash
 near view <your deployed contract> getProjects
