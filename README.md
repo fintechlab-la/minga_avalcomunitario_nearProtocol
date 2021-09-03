@@ -43,7 +43,7 @@ Este comando nos permite clonar el repositorio de nuestro proyecto MINGA
 git clone https://github.com/fintechlab-la/minga_avalcomunitario_nearProtocol.git
 ```
 
-Step 4: Construye y realiza una implementación de desarrollo de contrato inteligente 
+Step 4: Realiza el BUILD para implementación de desarrollo de contrato inteligente 
 ------------------------------------------------------------------------------------
 
 Cree el código de contrato inteligente MINGA AVAL COMUNITARIO e implemente el servidor de desarrollo local: `yarn buildevploy` (consulte` package.json` para
@@ -111,7 +111,7 @@ Esto ejecutará los métodos de prueba en el `assembly/__tests__/example.spec.js
 
 
 ```bash
-near call <your deployed contract>  hello  
+near call <your deployed contract> hello --account-id <username>.tesnet
 ```
 
 
