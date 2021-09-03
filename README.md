@@ -43,6 +43,10 @@ Este comando nos permite clonar el repositorio de nuestro proyecto MINGA
 git clone https://github.com/fintechlab-la/minga_avalcomunitario_nearProtocol.git
 ```
 
+Una vez que hayas descargado el repositorio, asegurate de ejecutar los comandos dentro del repositorio descargado. Puedes hacerlo con
+```bash
+cd minga_avalcomunitario_nearProtocol/
+```
 
 Step 4: Realiza el BUILD para implementación de desarrollo de contrato inteligente 
 ------------------------------------------------------------------------------------
@@ -99,7 +103,7 @@ near call <your deployed contract> eliminateProject '{"id":1}' --account-id <use
 ``` 
 Para Windows:
 ```bash
-near view <your deployed contract> eliminateProject "{\"id\":<id de proyecto>}" --account-id <username>.testnet
+near call <your deployed contract> eliminateProject "{\"id\":<id de proyecto>}" --account-id <username>.testnet
 ```
 ✏️ Comando para AVALAR un proyecto
 --------------------------------------------
