@@ -93,7 +93,7 @@ avalproject
 ✏️ Comando para CAMBIAR EL ESTADO de un proyecto
 ------------------------------------------------
 
-Permite cambiar el estado de un proyecto de avaldo y que finalmente accedio a un préstamo debido al aval comunitario.
+Permite cambiar el estado de un proyecto de avalado y que finalmente accedio a un préstamo debido al aval comunitario.
 
 ```bash
 near call <your deployed contract> changestatus '{"id":1}'
