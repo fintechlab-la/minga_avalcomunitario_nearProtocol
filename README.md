@@ -32,7 +32,7 @@ Configura tu near-cli para autorizar su cuenta de prueba creada recientemente:
 ```bash
 near login
 ```
-En la página web emergente, debes autorizar el ingreso con la cuenta que te haz creado previamente. Por ejemplo: 'aval1.testnet'. Luego, cerrar la ventana y continuar con el terminal.
+En la página web emergente, debes autorizar ingresando y confirmando con la cuenta que te haz creado previamente. Por ejemplo: 'aval1.testnet'. Luego, cerrar la ventana y continuar con el terminal.
     
 Step 3: Clonar Repositorio
 -------------------------------    
