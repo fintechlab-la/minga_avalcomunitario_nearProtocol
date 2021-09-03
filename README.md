@@ -169,6 +169,7 @@ Aquí dejamos una propuesta de diseño [UX/UI] para desarrollar la parte fronten
   [create-near-app]: https://github.com/near/create-near-app
   [Node.js]: https://nodejs.org/en/download/package-manager/
   [NEAR accounts]: https://docs.near.org/docs/concepts/account
+  [ingresar haciendo click aquí]: https://www.youtube.com/watch?v=2N20YqWkDgM&t=173s
   [NEAR Wallet]: https://wallet.testnet.near.org/
   [near-cli]: https://github.com/near/near-cli
   [NEAR test account]: https://docs.near.org/docs/develop/basics/create-account#creating-a-testnet-account
