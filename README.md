@@ -67,7 +67,8 @@ usarlo más tarde)
 ✏️ Comando para CREAR un proyecto para ser avalado
 -----------------------------------------------
 
-Permite crear un proyecto que ha sido revisado para entrar a la red de proyectos colaborativos para ser avalados de manera distribuida
+Permite crear un proyecto que ha sido revisado para entrar a la red de proyectos colaborativos para ser avalados de manera distribuida.
+
 Para Linux:
 ```bash
 near call <your deployed contract> createProject '{"title":"string","description":"string"}' --account-id <username>.testnet
@@ -79,7 +80,8 @@ near call <your deployed contract> createProject "{\"title\": \"string\",\"descr
 ✏️ Comando que LISTA todos los proyectos:
 --------------------------------------------
 
-Permite listar los proyectos que existen en nuestro contrato inteligente
+Permite listar los proyectos que existen en nuestro contrato inteligente.
+
 Para Linux y Windows:
 ```bash
 near view <your deployed contract> getProjects --account-id <username>.testnet
@@ -88,7 +90,8 @@ near view <your deployed contract> getProjects --account-id <username>.testnet
 ✏️ Comando para ELIMINAR un proyecto
 --------------------------------------------
 
-Permite eliminar un proyecto que ya no pertenece a la red y se da de baja
+Permite eliminar un proyecto que ya no pertenece a la red y se da de baja.
+
 Para Linux:
 ```bash
 near view <your deployed contract> eliminateProject '{"id":1}' --account-id <username>.testnet
@@ -100,7 +103,8 @@ near view <your deployed contract> eliminateProject "{\"id\":<id de proyecto>}" 
 ✏️ Comando para AVALAR un proyecto
 --------------------------------------------
 
-Permite dar la confianza comunitaria (avalar) a un proyecto mediante la distribución de near
+Permite dar la confianza comunitaria (avalar) a un proyecto mediante la distribución de near.
+
 Para Linux:
 ```bash
 near call <your deployed contract> avalProject '{"id":<id de proyecto>, "amount":<cantidad de near en números>}' --account-id <username>.testnet
@@ -114,6 +118,7 @@ near call <your deployed contract> avalProject "{\"id\":<id de proyecto>, \"amou
 ------------------------------------------------
 
 Permite cambiar el estado de un proyecto de avalado y que finalmente accedio a un préstamo debido al aval comunitario.
+
 Para Linux:
 ```bash
 near call <your deployed contract> changeStatus '{"id":1}' --account-id <username>.testnet
