@@ -70,7 +70,7 @@ usarlo más tarde)
 Permite crear un proyecto que ha sido revisado para entrar a la red de proyectos colaborativos para ser avalados de manera distribuida
 
 ```bash
-near call <your deployed contract> createProject '{"title": "string","description":"string"}' --account-id <username>.tesnet
+near call <your deployed contract> createProject '{"title":"string","description":"string"}' --account-id <username>.tesnet
 ```
 
 ✏️ Comando que LISTA todos los proyectos:
