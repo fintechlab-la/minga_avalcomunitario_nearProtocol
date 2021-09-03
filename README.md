@@ -81,7 +81,7 @@ near call <your deployed contract> createProject '{"title":"string","description
 ✏️ Comando que LISTA todos los proyectos:
 --------------------------------------------
 
-Permite listar los proyectos que existen en nuestro contrato inteligente
+Permite listar los proyectos que existen en nuestro contrato inteligente. Antes de ejecutar el comando brindado, modifica <your deployed contract> por el número de contrato generado. Por ejemplo: 'dev-1630622185346-59088620194720'. Además, modifica <username> por tu nombre de usuario en testnet. Por ejemplo: 'aval1'
 
 ```bash
 near view <your deployed contract> getProjects --account-id <username>.testnet
